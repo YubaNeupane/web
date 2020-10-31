@@ -49,10 +49,3 @@ class MemberSettingsForm(ModelForm):
             model = Member
             fields = '__all__'
             exclude = ['stripe_customer_id', 'user']
-
-
-class MemberLoginForm(ModelForm):
-    class Meta:
-        model = Member
-        fields = ['email'
-                  ]
